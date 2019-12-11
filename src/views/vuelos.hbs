@@ -1,0 +1,55 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto text-center">
+      <!-- WEATHER CARD -->
+      <div class="card">
+        <div class="card-body">
+          <h1 id="weather-location" class="h3"> {{weather.city}} {{weather.countryCode}}</h1>
+          <h3 id="weather-description" class="h4">{{weather.desc}}</h3>
+          <figure class="image is-50x50">
+            <img src="http://openweathermap.org/img/w/{{weather.icon}}.png" alt="Image">
+          </figure>
+          <h3 id="weather-string">{{weather.temperatura}} </h3>
+          <ul class="list-group mt-3">
+            <li id="weather-humidity" class="list-group-item">{{weather.humidity}}</li>
+            <li id="weather-wind" class="list-group-item">{{weather.wind}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- AMADEUS CARD -->
+<div class="container">
+  <div class="row p-5">
+    {{#each hh.data}}
+    <div class="col-md-5 mx-auto text-center">
+      <div class="p-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 id="type" class="card-title">{{type}}</h3>
+            <ul class="list-group mt-3">
+              <li id="origin" class="list-group-item">
+                <p class="card-text">Origin: {{origin}}</p>
+              </li>
+              <li id="destination" class="list-group-item">
+                <p class="card-text">destination: {{destination}}</p>
+              </li>
+              <li id="departureDate" class="list-group-item">
+                <p class="card-text">departureDate: {{departureDate}}</p>
+              </li>
+              <li id="returnDate" class="list-group-item">
+                <p class="card-text">return Date: {{returnDate}}</p>
+              </li>
+              <li id="price total" class="list-group-item">
+                <p class="card-text">price total: ${{price.total}}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+<!-- END AMADEUS CARD -->
