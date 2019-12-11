@@ -34,7 +34,7 @@ ctrl.index = async (req, res) => {
     data: {},
     dictionaries: {}
   };
-  await amadeus.shopping.flightDestinations.get({ origin: 'BOG' }).then(function (response) {
+  await amadeus.shopping.flightDestinations.get({ origin: iATACode }).then(function (response) {
     console.log(response);
     hh.estado = true;
     hh.data = response.data;

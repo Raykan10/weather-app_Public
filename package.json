@@ -1,12 +1,11 @@
 {
-  "name": "weather-app",
+  "name": "parcialSistemasDistribuidos",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/",
-    "build": "node src/index.js --output public"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +22,6 @@
     "request-promise": "^4.2.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.1"
+    "nodemon": "^2.0.2"
   }
 }
